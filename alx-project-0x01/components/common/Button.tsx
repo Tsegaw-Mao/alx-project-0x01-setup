@@ -1,4 +1,3 @@
-//basic button component
 import React from 'react';
 import Link from 'next/link';
 interface ButtonProps {
@@ -12,3 +11,4 @@ const Button: React.FC<ButtonProps> = ({ href, children }) => {
     </Link>
     );
 }
+export default Button;

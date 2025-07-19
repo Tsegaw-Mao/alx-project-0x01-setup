@@ -1,3 +1,4 @@
+// components/common/Postcard.tsx
 // basic post card component
 import React from 'react';
 import Link from 'next/link';
@@ -15,3 +16,4 @@ const PostCard: React.FC<PostCardProps> = ({ title, description, link }) => {
     </div>
   );
 }
+export default PostCard;

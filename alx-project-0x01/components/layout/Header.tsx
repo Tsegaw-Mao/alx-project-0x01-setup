@@ -1,17 +1,25 @@
-//basic Header component
-import React from 'react';
-import Link from 'next/link';
+import Link from 'next/link'; 
+
 const Header: React.FC = () => {
-    return (
-        <header className="bg-gray-800 text-white p-4">
-            <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-xl font-bold">My Website</h1>
-                <nav>
-                    <Link href="/" className="text-blue-400 hover:underline mx-2">Home</Link>
-                    <Link href="/about" className="text-blue-400 hover:underline mx-2">About</Link>
-                    <Link href="/contact" className="text-blue-400 hover:underline mx-2">Contact</Link>
-                </nav>
-            </div>
-        </header>
-    )
+  return (
+    <header className="bg-blue-600 text-white shadow-md py-4">
+      <div className="container mx-auto flex justify-between items-center px-4">
+        <h3 className="font-bold text-2xl">
+     <Link href="/">Daily Contents</Link>
+  </h3>
+        <nav>
+          <ul className="flex space-x-6">
+            <li className="hover:underline">
+              <Link href="/posts">Posts</Link>
+            </li>
+            <li className="hover:underline">
+              <Link href="/users">Users</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 }
+
+export default Header;
