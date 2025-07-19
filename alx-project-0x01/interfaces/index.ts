@@ -35,15 +35,15 @@ export interface Company {
 }
 
 export interface PostData {
-  userId: number;
-  id?: number;
-  title: string;
-  body: string;
+    userId: number;
+    id?: number;
+    title: string;
+    body: string;
 }
 
 export interface PostModalProps {
-  onClose: () => void;
-  onSubmit: (post: PostData) => void;
+    onClose: () => void;
+    onSubmit: (post: PostData) => void;
 }
 
 export interface UserData {
@@ -58,5 +58,5 @@ export interface UserData {
 }
 export interface UserModalProps {
     onClose: () => void;
-    onSubmit: (user: UserData) => void;
+    onSubmit: (user: UserProps) => void;
 }   
