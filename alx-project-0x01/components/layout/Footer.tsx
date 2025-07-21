@@ -1,4 +1,4 @@
-//components/layout/Footer.tsx
+// components/layout/Footer.tsx
 
 //basic footer component
 import React from 'react';

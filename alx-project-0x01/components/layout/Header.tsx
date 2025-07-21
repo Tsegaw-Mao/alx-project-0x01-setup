@@ -1,3 +1,5 @@
+// components/layout/Header.tsx
+
 import Link from 'next/link'; 
 
 const Header: React.FC = () => {
